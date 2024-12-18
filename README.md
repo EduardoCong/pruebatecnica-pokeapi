@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Pokédex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el código fuente de una Pokédex que permite buscar Pokémon, visualizar sus detalles y paginar entre diferentes grupos de Pokémon.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Búsqueda en tiempo real:** Escribe el nombre (o parte del nombre) de un Pokémon para ver sugerencias y seleccionar el que desees.
+- **Detalles del Pokémon:** Al seleccionar un Pokémon, se abre un modal con su información detallada, incluyendo el sprite normal y shiny.
+- **Paginación:** Navega entre las páginas de la Pokédex para explorar diferentes grupos de Pokémon.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (v14 en adelante)
+- npm o yarn
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clona este repositorio mediante https: https://github.com/EduardoCong/pruebatecnica-pokeapi.git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Entras a la carpeta con: "cd pruebatecnica"
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Una vez hayas entrado, abres la terminal y escribe el siguiente comando: "npm install"
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Ya que se haya instalado todo, en la terminal pondras este comando "npm run dev", te da el localhost y en el puerto en el que esta alojado.
+   
