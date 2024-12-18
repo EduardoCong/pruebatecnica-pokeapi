@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="main-page">
 
+      {/* Provider que maneja el estado que envuelve toda la aplicacion. */}
       <Provider store={store}>
         
         <header>
